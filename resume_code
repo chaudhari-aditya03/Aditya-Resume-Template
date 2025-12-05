@@ -1,0 +1,137 @@
+\documentclass[letterpaper,10.5pt]{article}
+
+%--------------------- Packages ---------------------%
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{dashrule}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\input{glyphtounicode}
+
+%--------------------- Page Setup ---------------------%
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\textwidth}{1.18in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.35in}
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%--------------------- Section Style ---------------------%
+\titleformat{\section}
+  {\vspace{-6pt}\large\bfseries\scshape}
+  {}
+  {0em}
+  {}
+  [\vspace{2pt}\hdashrule{\linewidth}{0.4pt}{2pt}\vspace{-6pt}]
+
+%--------------------- Commands ---------------------%
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.17in,label=\textbullet,itemsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in,label={},itemsep=4pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeSubheading}[4]{
+ \item
+ \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+   \textbf{#1} & \textbf{#2} \\
+   \textit{\small #3} & \textit{\small #4}
+ \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+ \item
+ \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+   \textbf{#1} & \small #2
+ \end{tabular*}\vspace{-4pt}
+}
+
+%==================== RESUME START ====================%
+
+\begin{document}
+
+%--------------------- HEADER ---------------------%
+\begin{center}
+{\Huge \scshape Aditya Bapusaheb Chaudhari} \\[-2pt]
+Pune, Maharashtra \\
+\faPhone~7709648063 \,|\, 
+\href{mailto:adityachaudhari312005@gmail.com}{adityachaudhari312005@gmail.com} \\
+\href{https://linkedin.com/in/aditya-chaudhari-b9767a36a/}{LinkedIn} \,|\, 
+\href{https://github.com/chaudhari-aditya03}{GitHub} \,|\, 
+\href{https://aditya.com}{Portfolio}
+\end{center}
+
+%--------------------- EDUCATION ---------------------%
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{S.M. Bhausaheb Santuji Thorat College, Sangamner}{2022 -- 2025}
+{Bachelor of Science in Computer Science | CGPA: 9.48}{Maharashtra, India}
+\resumeSubHeadingListEnd
+
+%--------------------- TECHNICAL SKILLS ---------------------%
+\section{Technical Skills}
+\resumeItemListStart
+\resumeItem{\textbf{Languages:} Java, Python, JavaScrpit, C, C++, C\#.NET, PHP, SQL}
+\resumeItem{\textbf{Full Stack (Java + MERN):} Spring Boot, Hibernate, JDBC, JSP, Servlets, MongoDB, Express.js, React.js, Node.js}
+\resumeItem{\textbf{Frontend:} ReactJS, Redux Toolkit, Tailwind CSS, Material UI, Bootstrap}
+\resumeItem{\textbf{Backend:} Spring Boot REST APIs, Express.js APIs, JWT Auth, MVC}
+\resumeItem{\textbf{Databases:} MySQL, MongoDB, PostgreSQL}
+\resumeItem{\textbf{Tools:} Git, GitHub, IntelliJ, VS Code, Postman, Maven, Gradle}
+\resumeItem{\textbf{Cloud \& Deployment:} Firebase, AWS S3, Vercel, Netlify, Render}
+\resumeItem{\textbf{Profiles:} 
+\href{https://leetcode.com/}{LeetCode} |
+\href{https://www.geeksforgeeks.org/user/}{GFG}}
+\resumeItem{\textbf{Certifications:} 
+\href{}{Full-Stack Development} |
+\href{YOUR_CERT}{Java Programming} |
+\href{YOUR_CERT}{Python}}
+\resumeItemListEnd
+
+%--------------------- PROJECTS ---------------------%
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading{Project Title 1}{\href{LIVE_LINK}{Live} | \href{GITHUB_LINK}{GitHub}}
+\resumeItemListStart
+\resumeItem{Built a full-stack platform using \textbf{React, Node.js, MongoDB} with JWT authentication.}
+\resumeItemListEnd
+
+\resumeProjectHeading{Project Title 2}{\href{LIVE_LINK}{Live} | \href{GITHUB_LINK}{GitHub}}
+\resumeItemListStart
+\resumeItem{Developed responsive UI with \textbf{React + Tailwind CSS} and integrated \textbf{Spring Boot} backend.}
+\resumeItemListEnd
+
+\resumeProjectHeading{Project Title 3}{\href{LIVE_LINK}{Live} | \href{GITHUB_LINK}{GitHub}}
+\resumeItemListStart
+\resumeItem{Optimized PostgreSQL queries and deployed system using \textbf{Vercel CI/CD}.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%--------------------- ACHIEVEMENTS ---------------------%
+\section{Achievements}
+\resumeItemListStart
+\resumeItem{\textbf{1st Rank} in entire B.Sc. Computer Science program.}
+\resumeItem{Selected for \textbf{University-Level AVISHKAR Research Competition}.}
+\resumeItem{Developed and deployed multiple full-stack applications (Java + MERN).}
+\resumeItemListEnd
+
+%--------------------- LEADERSHIP / EXTRACURRICULAR ---------------------%
+\section{Leadership / Extracurricular}
+\resumeItemListStart
+\resumeItem{Directed the drama production \textbf{“Shivrajyabhishek”} with a team of \textbf{70 students}, managing rehearsals, coordination, and logistics for 3 months; the performance won \textbf{1st Prize} at the \textbf{Amrutvahini Medha Festival}.}
+\resumeItem{Regularly teach and mentor junior students, providing guidance in both \textbf{technical and non-technical subjects} as assigned by faculty.}
+\resumeItem{Conducted multiple mentoring sessions for juniors, helping them understand programming fundamentals, project building, and academic concepts.}
+\resumeItemListEnd
+
+
+\end{document}
