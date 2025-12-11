@@ -1,6 +1,6 @@
 \documentclass[letterpaper,10.5pt]{article}
 
-%--------------------- Packages ---------------------%
+%------------- Packages ----%
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage[usenames,dvipsnames]{color}
