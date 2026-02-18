@@ -1,4 +1,5 @@
-\documentclass[letterpaper,10.5pt]{article}
+
+\documentclass[letterpaper,10.8pt]{article}
 
 %------------- Font & ATS Optimization ----%
 \usepackage[T1]{fontenc}
@@ -11,52 +12,53 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{fontawesome5}
-\usepackage{dashrule}
 \usepackage{tabularx}
 \usepackage{fancyhdr}
 \input{glyphtounicode}
+
+\pdfgentounicode=1
 
 %--------------------- Page Setup ---------------------%
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\addtolength{\oddsidemargin}{-0.55in}
-\addtolength{\textwidth}{1.18in}
-\addtolength{\topmargin}{-0.6in}
-\addtolength{\textheight}{1.35in}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
 \raggedright
 \setlength{\tabcolsep}{0in}
 
 %--------------------- Section Style ---------------------%
 \titleformat{\section}
-  {\vspace{-6pt}\large\bfseries\scshape}
+  {\vspace{-2pt}\scshape\raggedright\large\bfseries}
   {}
   {0em}
   {}
-  [\vspace{2pt}\hdashrule{\linewidth}{0.4pt}{2pt}\vspace{-6pt}]
+  [\color{black}\titlerule \vspace{-4pt}]
 
 %--------------------- Commands ---------------------%
 \newcommand{\resumeItem}[1]{\item\small{#1}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.17in,label=\textbullet,itemsep=1pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in,label={},itemsep=4pt]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
 \newcommand{\resumeSubheading}[4]{
- \item
- \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
-   \textbf{#1} & \textbf{#2} \\
-   \textit{\small #3} & \textit{\small #4}
- \end{tabular*}\vspace{-4pt}
+  \vspace{-1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
- \item
- \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
-   \textbf{#1} & \small #2
- \end{tabular*}\vspace{-4pt}
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \small #2 \\
+    \end{tabular*}\vspace{-6pt}
 }
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in, label=\textbullet, itemsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 %==================== RESUME START ====================%
 
@@ -64,94 +66,89 @@
 
 %--------------------- HEADER ---------------------%
 \begin{center}
-{\Huge \scshape Aditya Bapusaheb Chaudhari} \\[-2pt]
-Pune, Maharashtra \\
-\7709648063 \,|\, 
-\href{mailto:adityachaudhari312005@gmail.com}{adityachaudhari312005@gmail.com} \\
-\href{https://linkedin.com/in/aditya-chaudhari-b9767a36a/}{LinkedIn} \,|\, 
-\href{https://github.com/chaudhari-aditya03}{GitHub}
-\,|\, 
-\href{https://aditya-chaudhari-sde-portfolio.vercel.app/}{Portfolio}
-\,|\,
-\href{https://leetcode.com/u/chaudhari_aditya_03/}{Leetcode}
+    {\Huge \scshape Aditya Bapusaheb Chaudhari} \\ \vspace{6pt}
+    \small 
+    \faPhone* +91 7709648063 \quad 
+    \faEnvelope\ \href{mailto:adityachaudhari312005@gmail.com}{adityachaudhari312005@gmail.com} \quad 
+    \faMapMarker*\ Pune, Maharashtra \\ \vspace{3pt}
+    \faLinkedin\ \href{https://linkedin.com/in/aditya-chaudhari-b9767a36a/}{LinkedIn} \quad 
+    \faGithub\ \href{https://github.com/chaudhari-aditya03}{GitHub} \quad 
+    \faGlobe\ \href{https://aditya-chaudhari-sde-portfolio.vercel.app/}{Portfolio} \quad 
+    \faCode\ \href{https://leetcode.com/u/chaudhari_aditya_03/}{Leetcode}
 \end{center}
+
 
 %--------------------- EDUCATION ---------------------%
 \section{Education}
 \resumeSubHeadingListStart
-\resumeSubheading
-{SBVP Samaj's , Sahakar Maharshi Bhausaheb Santuji Thorat College, Sangamner}{2022 -- 2025}
-{Bachelor of Science in Computer Science | CGPA: 9.48}{Maharashtra, India}
+    \resumeSubheading
+      {S.M.B.S. Thorat College (Savitribai Phule Pune University)}{Sangamner, MH}
+      {Bachelor of Science in Computer Science | \textbf{CGPA: 9.48}}{2022 -- 2025}
+      \resumeItemListStart
+        \resumeItem{Awarded \textbf{Department Topper (Rank 1)} among 120+ students for 3 consecutive years.}
+        \resumeItem{Core Coursework: Data Structures \& Algorithms, Object-Oriented Programming, Database Management Systems, Software Engineering, and Web Development.}
+      \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %--------------------- TECHNICAL SKILLS ---------------------%
 \section{Technical Skills}
-\resumeItemListStart
-\resumeItem{\textbf{Languages:} Java(Core + Advance), C, C++, Python ,JavaScript, PHP, SQL,C#.Net}
-\resumeItem{\textbf{Backend:} Spring Boot, Hibernate, JDBC, JSP, Servlets, REST APIs, JWT, MVC}
-\resumeItem{\textbf{Frontend:}  HTML5, CSS3, Tailwind CSS, Bootstrap, React.js}
-\resumeItem{\textbf{Databases:} MySQL, MongoDB, PostgreSQL}
-\resumeItem{\textbf{Tools:} Git, GitHub, IntelliJ, VS Code, Postman, Maven, ngrok}
-\resumeItem{\textbf{Cloud \& Deployment:} Vercel, Netlify, Render}
-\resumeItemListEnd
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java (Core/Advanced), JavaScript (ES6+), SQL (MySQL), C++, C, Python} \\
+     \textbf{Backend Development}{: Spring Boot, Hibernate ORM, JDBC, JSP, Servlets, RESTful APIs, JWT, Spring Security} \\
+     \textbf{Frontend Development}{: React.js, Tailwind CSS, Bootstrap 5, HTML5, CSS3, DOM Manipulation} \\
+     \textbf{Tools \& DevOps}{: Git, GitHub, Maven, Postman, IntelliJ IDEA, VS Code, Ngrok, Agile Methodologies} \\
+     \textbf{Cloud \& Deployment}{: Vercel, Netlify, Railway, Render, Neon PostgreSQL, Supabase}
+    }}
+ \end{itemize}
 
 %--------------------- PROJECTS ---------------------%
 \section{Projects}
 \resumeSubHeadingListStart
 
-% -------- NEXUS Project --------
-\resumeProjectHeading{SentinelX – A Smart Crime Data and Analytics Hub}{\href{https://github.com/chaudhari-aditya03/sentinelx-smart-policing-platform.git}{GitHub}}
+    \resumeProjectHeading
+      {\textbf{SentinelX – Smart Policing \& Crime Analytics} $|$ \emph{Java, JSP, Servlet, MySQL, JDBC}}{Jan 2026}
+      \resumeItemListStart
+        \resumeItem{Engineered a comprehensive data management system for law enforcement, implementing \textbf{Role-Based Access Control (RBAC)} for Administrators, Officers, and Civilians.}
+        \resumeItem{Developed \textbf{12+ core functional modules} including FIR E-filing, Real-time Case Tracking, Criminal Database Profiling, and automated Evidence Log Management.}
+        \resumeItem{Optimized backend performance by refining \textbf{SQL stored procedures} and normalizing schemas, resulting in a \textbf{35\% reduction in data retrieval time}.}
+        \resumeItem{Integrated secure session management and Bcrypt hashing to ensure the integrity of sensitive criminal records.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Luxury Jewelry E-Commerce Platform} $|$ \emph{React, Spring Boot, Hibernate, MySQL}}{Oct 2025}
+      \resumeItemListStart
+        \resumeItem{Architected a scalable \textbf{microservices-ready} full-stack application with a React-based frontend and a Spring Boot REST API backend.}
+        \resumeItem{Implemented \textbf{JWT (JSON Web Tokens)} for secure stateless authentication and developed a custom middleware for protected API routes.}
+        \resumeItem{Designed a dynamic Product Catalog and Admin Dashboard that allows real-time inventory updates, order status tracking, and user management.}
+        \resumeItem{Leveraged \textbf{Hibernate Criteria API} for advanced filtering and search functionality, improving user UX efficiency.}
+      \resumeItemListEnd
+      \resumeProjectHeading
+{\textbf{Advanced Frontend UI Systems} $|$ \emph{React.js, Tailwind CSS, JavaScript}}{2025}
 \resumeItemListStart
-\resumeItem{Developed a secure crime data management and analytics platform using \textbf{JSP, Servlets, JDBC, MySQL, HTML, CSS, JavaScript} with \textbf{Maven}.}
-\resumeItem{Implemented \textbf{role-based access control} for Admin, Police Officers, and Analysts with session security and audit logs.}
-\resumeItem{Built \textbf{12+ functional modules} including FIR management, case tracking, criminal profiling, evidence logs, officer registry, and report generation.}
-\resumeItem{Designed analytical dashboards to visualize crime trends and case resolution metrics.}
-\resumeItem{Optimized SQL queries improving report performance by \textbf{35\%}.}
+\resumeItem{Developed responsive dashboards and e-commerce UI layouts using modern React architecture.}
+\resumeItem{Implemented core React concepts including \textbf{Hooks (useState, useEffect, useContext)}, conditional rendering, and reusable components.}
+\resumeItem{Designed scalable, responsive interfaces using Tailwind CSS utility-first styling.}
 \resumeItemListEnd
 
-% -------- SmartGram Project --------
-\resumeProjectHeading{SmartGram – Digital Grampanchayat Platform}{\href{https://github.com/chaudhari-aditya03/smartgram-digital-panchayat}{GitHub}}
-\resumeItemListStart
-\resumeItem{Built a scalable rural governance platform using \textbf{React.js} frontend and \textbf{Spring Boot, Hibernate, MySQL} backend.}
-\resumeItem{Developed \textbf{12+ REST APIs} for citizen services, grievance tracking, document requests, and admin workflows.}
-\resumeItem{Implemented JWT authentication, role-based authorization, and normalized database schema.}
-\resumeItem{Designed modular architecture supporting future mobile and cloud scalability.}
-\resumeItemListEnd
-
-% -------- Frontend Projects --------
-\resumeProjectHeading{Frontend UI Projects – Portfolio, Clones \& Dashboards}{\href{https://github.com/chaudhari-aditya03/}{GitHub}}
-\resumeItemListStart
-\resumeItem{Built \textbf{10+ responsive UI projects} using HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS.}
-\resumeItem{Projects include Portfolio Website, Amazon Clone UI, Netflix Music UI Clone, Educational Website, and Admin Dashboards.}
-\resumeItem{Achieved \textbf{95+ Lighthouse performance score} through optimized layouts and asset handling.}
-\resumeItemListEnd
+   
 
 \resumeSubHeadingListEnd
 
-%--------------------- COURSES & CERTIFICATIONS ---------------------%
-\section{Courses \& Certifications}
+%--------------------- ACHIEVEMENTS & LEADERSHIP ---------------------%
+\section{Achievements \& Leadership}
 \resumeItemListStart
-\resumeItem{
-\textbf{Full Stack Java Development – The Kiran Academy}: 
-Core Java, Advanced Java, JDBC, JSP, Servlets, Spring Boot, Hibernate, MySQL, Maven, Git. 
-\textbf{Certificate:} \href{https://drive.google.com/file/d/1FzH7FqPvbZIg4w7USgcvFK90i78PpFuP/view?usp=sharing}{View}
-}
-\resumeItem{\textbf{Full Stack Development – UpGrad (Ongoing)}: MERN Stack (React, Node.js, Express, MongoDB), DSA, System Design Basics, Cloud Deployment.}
-\resumeItemListEnd
-%--------------------- ACHIEVEMENTS ---------------------%
-
-\section{Achievements}
-\resumeItemListStart
-\resumeItem{\textbf{Ranked 1st} among \textbf{120+ students} in B.Sc. Computer Science with CGPA \textbf{9.48}.}
-\resumeItem{Selected for \textbf{University-Level AVISHKAR Research Competition}.}
-\resumeItem{Solved \textbf{150+ DSA problems} across LeetCode.}
+    \resumeItem{Participated in the \textbf{University-Level AVISHKAR Research Competition}, presenting a technical model on smart governance.}
+    \resumeItem{Maintained a \textbf{150+ LeetCode problem-solving streak}, mastering Data Structures like Graphs, Trees, and Dynamic Programming.}
+    \resumeItem{Mentored a group of 15+ junior students in \textbf{Core Java fundamentals}, assisting in the successful delivery of their final year projects.}
+    \resumeItem{Winner of the \textbf{1st Prize} at the Amrutvahini Medha Festival for directing a production involving 70+ participants.}
 \resumeItemListEnd
 
-% %--------------------- LEADERSHIP ---------------------%
-% \section{Leadership \& Extracurricular}
-% \resumeItemListStart
-% \resumeItem{Directed a drama production \textbf{“Shivrajyabhishek”} managing \textbf{70+ participants}; won \textbf{1st Prize} at Amrutvahini Medha Festival.}
-% \resumeItem{Mentored junior students in programming fundamentals, project development, and academic preparation.}
-% \resumeItemListEnd
+%--------------------- CERTIFICATIONS ---------------------%
+\section{Certifications}
+\resumeItemListStart
+    \resumeItem{\textbf{Full Stack Java Development}: Professional training at The Kiran Academy, covering the entire Java ecosystem from JDBC to Spring Boot.}
+    \resumeItem{\textbf{Advanced MERN Stack Certification}: (UpGrad - Ongoing) Specializing in MongoDB, Express, and Node.js backend architecture.}
+\resumeItemListEnd
 
 \end{document}
