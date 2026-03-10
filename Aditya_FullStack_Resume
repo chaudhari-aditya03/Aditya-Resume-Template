@@ -1,0 +1,212 @@
+\documentclass[letterpaper,10pt]{article}
+
+% ---------- ATS Font ----------
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% ---------- Packages ----------
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% ---------- Page Layout ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
+
+\setlength{\tabcolsep}{0in}
+\raggedright
+
+% ---------- Section Style ----------
+\titleformat{\section}
+{\large\bfseries\scshape}
+{}{0em}{}
+[\titlerule]
+
+% ---------- Custom Commands ----------
+
+\newcommand{\resumeItem}[1]{
+\item \small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\item
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\end{tabular*}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in,label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in,itemsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+% ================== RESUME ==================
+
+\begin{document}
+
+% ---------- HEADER ----------
+
+\begin{center}
+
+{\Huge \textbf{Aditya Bapusaheb Chaudhari}}
+
+\vspace{4pt}
+
+\small
+\faPhone\ +91 7709648063 \quad
+\faEnvelope\ \href{mailto:adityachaudhari312005@gmail.com}{adityachaudhari312005@gmail.com} \quad
+\faMapMarker*\ Pune, India
+
+\vspace{3pt}
+
+\faLinkedin\ \href{https://linkedin.com/in/aditya-chaudhari-b9767a36a}{LinkedIn} \quad
+\faGithub\ \href{https://github.com/chaudhari-aditya03}{GitHub} \quad
+\faGlobe\ \href{https://aditya-chaudhari-sde-portfolio.vercel.app}{Portfolio} \quad
+\faCode\ \href{https://leetcode.com/u/chaudhari_aditya_03}{LeetCode}
+
+\end{center}
+
+% ---------- EDUCATION ----------
+
+\section{Education}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{S.M.B.S. Thorat College (Savitribai Phule Pune University)}{Sangamner, MH}
+{Bachelor of Science in Computer Science | \textbf{CGPA: 9.48}}{2022 -- 2025}
+
+\resumeItemListStart
+
+\resumeItem{\textbf{Department Rank 1 Topper} among 120+ students for three consecutive years.}
+
+\resumeItem{Relevant Coursework: Data Structures \& Algorithms, Object-Oriented Programming, DBMS, Software Engineering, Web Development.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ---------- TECHNICAL SKILLS ----------
+
+\section{Technical Skills}
+
+\begin{itemize}[leftmargin=0.15in,label={}]
+\small{\item{
+
+\textbf{Languages:} Java, JavaScript (ES6+), Python, C++, C, SQL
+
+\textbf{Frontend:} React.js, Redux Toolkit, Tailwind CSS, Bootstrap, HTML5, CSS3
+
+\textbf{Backend:} Spring Boot, Spring Framework, Node.js, Express.js, JSP, Servlets, JDBC, REST APIs, JWT Authentication, Spring Security, MVC Architecture
+
+\textbf{Databases:} MySQL, MongoDB \quad | \quad \textbf{ORM/ODM:} Hibernate, Mongoose
+
+\textbf{Tools:} Git, GitHub, Maven, Postman, IntelliJ IDEA, VS Code
+
+\textbf{Cloud:} Vercel, Netlify, Render, Railway, Neon PostgreSQL
+
+}}
+\end{itemize}
+
+% ---------- PROJECTS ----------
+
+\section{Projects}
+
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{SentinelX – Smart Policing \& Crime Analytics} $|$ \emph{Java, JSP, Servlets, MySQL, JDBC} $|$ \href{https://github.com/chaudhari-aditya03/SentinelX-Platform}{GitHub}}
+{Aug 2025}
+
+\resumeItemListStart
+
+\resumeItem{Built a law-enforcement data platform implementing \textbf{Role-Based Access Control (RBAC)} for administrators, officers, and civilians.}
+
+\resumeItem{Developed \textbf{12+ system modules} including FIR e-filing, case tracking, criminal profiling, and evidence management.}
+
+\resumeItem{Optimized SQL queries and normalized database schema reducing \textbf{data retrieval time by 35\%}.}
+
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Luxury Jewelry E-Commerce Platform} $|$ \emph{React.js, Spring Boot, Hibernate, MySQL} $|$ \href{https://github.com/chaudhari-aditya03/luxury-jewelry-ecommerce}{GitHub}}
+{Jan 2026}
+
+\resumeItemListStart
+
+\resumeItem{Developed a full-stack e-commerce system using \textbf{React frontend} and \textbf{Spring Boot REST APIs}.}
+
+\resumeItem{Implemented \textbf{JWT-based authentication} securing user login and protected endpoints.}
+
+\resumeItem{Built an admin dashboard for product management, order tracking, and inventory updates.}
+
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Modern React UI Projects} $|$ \emph{React.js, Tailwind CSS, JavaScript} $|$ \href{https://github.com/chaudhari-aditya03/frontend-project-demo}{GitHub}}
+{2025}
+
+\resumeItemListStart
+
+\resumeItem{Developed responsive dashboards, e-commerce interfaces, and dynamic form systems.}
+
+\resumeItem{Implemented reusable components using \textbf{React Hooks (useState, useEffect)} and modular architecture.}
+
+\resumeItem{Designed scalable responsive layouts using \textbf{Tailwind CSS}.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ---------- ACHIEVEMENTS ----------
+
+\section{Achievements}
+
+\resumeItemListStart
+
+\resumeItem{Participant in \textbf{University-Level AVISHKAR Research Competition}.}
+
+\resumeItem{Solved \textbf{150+ LeetCode problems} covering Graphs, Trees, and Dynamic Programming.}
+
+\resumeItem{Mentored \textbf{15+ junior students} in Core Java and project development.}
+
+\resumeItem{Winner of \textbf{1st Prize} at Amrutvahini Medha Festival directing a production with 70+ participants.}
+
+\resumeItemListEnd
+
+% ---------- CERTIFICATIONS ----------
+
+\section{Certifications}
+
+\resumeItemListStart
+
+\resumeItem{\textbf{Full Stack Java Development — The Kiran Academy} $|$ 
+\href{https://drive.google.com/file/d/1FzH7FqPvbZIg4w7USgcvFK90i78PpFuP/view?usp=sharing}{View Certificate}}
+
+\resumeItem{\textbf{Advanced MERN Stack Certification — UpGrad (Ongoing)} $|$ 
+\href{#}{View Certificate}}
+
+\resumeItemListEnd
+
+\end{document}
