@@ -1,0 +1,195 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+\definecolor{navyblue}{HTML}{1a2744}
+\definecolor{accentgold}{HTML}{b8933e}
+\definecolor{mutedgray}{HTML}{4a4a5a}
+\definecolor{lightgold}{HTML}{f5edd8}
+\definecolor{lightblue}{HTML}{eef2f9}
+
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.70in}
+\addtolength{\textheight}{1.4in}
+
+\setlength{\tabcolsep}{0pt}
+\setlength{\parindent}{0pt}
+\raggedright
+\pagenumbering{gobble}
+
+\titleformat{\section}
+  {\color{navyblue}\normalsize\bfseries\scshape}
+  {}
+  {0em}
+  {}
+  [\color{navyblue}\titlerule]
+
+\titlespacing{\section}{0pt}{6pt}{4pt}
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{1pt}
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\color{navyblue}#1} & \small\textcolor{mutedgray}{#2} \\
+    \textit{\small\textcolor{accentgold}{#3}} & \textit{\small\textcolor{mutedgray}{#4}} \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProject}[5]{%
+  \vspace{3pt}
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\color{navyblue}#1} \textcolor{mutedgray}{\small\textendash\ #2} &
+    \small\href{#4}{\textcolor{navyblue}{\underline{Live}}}\ \textcolor{mutedgray}{|}\ \href{#5}{\textcolor{navyblue}{\underline{GitHub}}} \\
+  \end{tabular*}
+  {\small\textcolor{mutedgray}{\textit{#3}}}
+  \vspace{-4pt}
+}
+
+\newcommand{\resumeListStart}{%
+  \begin{itemize}[leftmargin=0.17in, label={\color{accentgold}\scriptsize$\blacktriangleright$}, itemsep=1pt, topsep=2pt, parsep=0pt]%
+}
+\newcommand{\resumeListEnd}{\end{itemize}}
+
+% ============================================================
+\begin{document}
+% ============================================================
+
+% HEADER
+\begin{center}
+  {\LARGE\bfseries\color{navyblue} Aditya Bapusaheb Chaudhari}\\[3pt]
+  {\small\color{accentgold}\textsc{Software Developer \quad|\quad Java Full Stack Developer \quad|\quad MERN Stack Developer}}\\[4pt]
+  {\small
+    \textcolor{mutedgray}{Pune, India}
+    \quad\textcolor{mutedgray}{|}\quad
+    \textcolor{mutedgray}{+91 77096 48063}
+    \quad\textcolor{mutedgray}{|}\quad
+    \href{mailto:aditya.chaudhari.dev@gmail.com}{\textcolor{navyblue}{aditya.chaudhari.dev@gmail.com}}
+  }\\[2pt]
+  {\small
+    \href{https://www.linkedin.com/in/aditya-chaudhari0301/}{\textcolor{navyblue}{\underline{LinkedIn}}}
+    \quad\textcolor{mutedgray}{|}\quad
+    \href{https://github.com/chaudhari-aditya03}{\textcolor{navyblue}{\underline{GitHub}}}
+    \quad\textcolor{mutedgray}{|}\quad
+    \href{https://adityaportfolio-taupe.vercel.app/}{\textcolor{navyblue}{\underline{Portfolio}}}
+    \quad\textcolor{mutedgray}{|}\quad
+    \href{https://leetcode.com/u/chaudhari_aditya_03/}{\textcolor{navyblue}{\underline{LeetCode}}}
+  }
+\end{center}
+
+\vspace{-4pt}
+\noindent\textcolor{navyblue}{\rule{\textwidth}{1.5pt}}
+\vspace{-4pt}
+
+% ============================================================
+% 1. PROFESSIONAL SUMMARY
+% ============================================================
+\section{Professional Summary}
+\vspace{2pt}
+\colorbox{lightgold}{\parbox{\dimexpr\textwidth-2\fboxsep}{%
+  \vspace{3pt}\small\textcolor{mutedgray}{%
+    Software Developer with strong foundations in \textbf{Java, OOP, Data Structures \& Algorithms, DBMS, and Software Engineering}.
+    Hands-on experience building production-grade full-stack applications using \textbf{Spring Boot, React.js, Node.js, MySQL, and MongoDB}.
+    Skilled in REST API design, JWT authentication, Role-Based Access Control (RBAC), cloud deployment, and secure application development.
+    Passionate about building scalable and maintainable software solutions.%
+  }\vspace{3pt}
+}}
+
+% ============================================================
+% 2. TECHNICAL SKILLS
+% ============================================================
+\section{Technical Skills}
+\resumeListStart
+  \resumeItem{\textbf{Languages:} Java, JavaScript (ES6+), SQL}
+  \resumeItem{\textbf{Core Java:} OOP, Exception Handling, Collections Framework, Multithreading, JDBC, File Handling, Java 8 (Lambda Expressions, Stream API)}
+  \resumeItem{\textbf{Java Stack:} Spring Boot, Spring MVC, Spring Security, Hibernate ORM, JPA, Servlets, JSP, RESTful APIs, Swagger/OpenAPI, MVC Architecture}
+  \resumeItem{\textbf{MERN Stack:} MongoDB, Express.js, React.js, Node.js, Redux Toolkit, Socket.io}
+  \resumeItem{\textbf{Frontend:} HTML5, CSS3, Bootstrap, Tailwind CSS, Responsive Web Design}
+  \resumeItem{\textbf{Databases:} MySQL, MongoDB, MongoDB Atlas, Database Design, Query Optimization, Indexing}
+  \resumeItem{\textbf{Security:} JWT Authentication, Role-Based Access Control (RBAC), Google OAuth2, Email Verification, Password Encryption}
+  \resumeItem{\textbf{Deployment \& Cloud:} Vercel, Render, Railway, MongoDB Atlas, Cloudinary, GoDaddy Hosting, Custom Domain Configuration}
+  \resumeItem{\textbf{Tools:} Git, GitHub, Maven, Postman, Swagger UI, Eclipse IDE, VS Code}
+  \resumeItem{\textbf{CS Fundamentals:} Data Structures \& Algorithms, DBMS, Operating Systems, Computer Networks, Software Engineering, System Design Basics}
+\resumeListEnd
+
+% ============================================================
+% 3. EDUCATION
+% ============================================================
+\section{Education}
+\resumeSubheading
+  {B.Sc. Computer Science}{2022 \textendash\ 2025}
+  {S.M.B.S. Thorat College, Savitribai Phule Pune University}{\textbf{CGPA: 9.48\,/\,10}}
+
+\resumeListStart
+  \resumeItem{Ranked \textbf{1st among 120+ students} for \textbf{three consecutive academic years} out of 120+ peers.}
+  \resumeItem{Relevant Coursework: Data Structures \& Algorithms, OOP, DBMS, Operating Systems, Computer Networks, Software Engineering, Web Technologies}
+\resumeListEnd
+
+% ============================================================
+% 4. PROJECTS
+% ============================================================
+\section{Projects}
+
+\resumeProject
+  {Maison Luxora}
+  {Luxury Jewellery E-Commerce Platform}
+  {React.js $\cdot$ Spring Boot $\cdot$ Spring Security $\cdot$ Hibernate/JPA $\cdot$ MySQL $\cdot$ JWT $\cdot$ Razorpay $\cdot$ Cloudinary $\cdot$ Vercel $\cdot$ Render}
+  {https://jewelryeshop.vercel.app/}
+  {https://github.com/chaudhari-aditya03/luxury-jewelry-ecommerce}
+
+\resumeListStart
+  \resumeItem{Developed a full-stack luxury e-commerce platform featuring product catalog, advanced search/filter, wishlist, cart, secure checkout, order tracking, and review management.}
+  \resumeItem{Designed scalable backend architecture using \textbf{Spring Boot, Spring Security, Hibernate/JPA, and RESTful APIs}; implemented \textbf{JWT-based authentication, RBAC, Google OAuth2, email verification, and password recovery}.}
+  \resumeItem{Integrated \textbf{Razorpay payment gateway} and \textbf{Cloudinary} for secure payment processing and media management; built comprehensive admin dashboard for product, order, coupon, inventory, and business analytics management.}
+  \resumeItem{Deployed production environment via \textbf{Vercel, Render, and Railway} with custom domain configuration, HTTPS, and environment variable management.}
+\resumeListEnd
+
+\resumeProject
+  {MediPulse}
+  {Real-Time Emergency Response Platform}
+  {MongoDB $\cdot$ Express.js $\cdot$ React.js $\cdot$ Node.js $\cdot$ Socket.io $\cdot$ JWT $\cdot$ Vercel}
+  {https://medipulse-client.vercel.app/}
+  {https://github.com/chaudhari-aditya03/MEDIPULSE}
+
+\resumeListStart
+  \resumeItem{Developed a real-time emergency response platform for ambulance booking, live GPS tracking, hospital coordination, and emergency request management.}
+  \resumeItem{Implemented \textbf{Socket.io} for real-time ambulance location tracking and emergency notifications; handled real-time communication across \textbf{5 concurrent user roles} (Admin, Hospital, Doctor, Driver, User).}
+  \resumeItem{Optimized MongoDB queries using \textbf{indexing strategies}, reducing database response time by \textbf{25\%}; designed and documented REST APIs for user, hospital, ambulance, and emergency tracking modules.}
+\resumeListEnd
+
+% ============================================================
+% 5. ACHIEVEMENTS
+% ============================================================
+\section{Achievements}
+\resumeListStart
+  \resumeItem{Won \textbf{1st Prize} in a technical event among \textbf{70+ participants}.}
+  \resumeItem{Mentored \textbf{100+ students} in Java, Web Development, and project-based learning as a peer educator.}
+  \resumeItem{Solved \textbf{150+ Data Structures \& Algorithms problems} on LeetCode across Arrays, Strings, Trees, Graphs, Dynamic Programming, and Hashing.}
+  \resumeItem{Deployed \textbf{2 production-grade full-stack applications} with real users, cloud infrastructure, and custom domains.}
+\resumeListEnd
+
+% ============================================================
+% 6. CERTIFICATIONS
+% ============================================================
+\section{Certifications}
+\resumeListStart
+  \resumeItem{%
+    \textbf{Full Stack Java Development} \textendash\ The Kiran Academy \hfill
+    \href{https://drive.google.com/file/d/1882LhZOXhZp8QZoA8ESmiZQ7UPU5X7QK/view}{\textcolor{navyblue}{\small[\underline{Credential}]}}%
+  }
+  \resumeItem{%
+    \textbf{Advanced Certification Programme in Full Stack Development} \textendash\ UpGrad \hfill
+    \href{https://drive.google.com/file/d/1gpo6BZkQVPmRovn6bcuFr6GmkTr7zX7o/view}{\textcolor{navyblue}{\small[\underline{Credential}]}}%
+  }
+\resumeListEnd
+
+\end{document}
