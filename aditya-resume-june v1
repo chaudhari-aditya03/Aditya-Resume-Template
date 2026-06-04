@@ -1,0 +1,196 @@
+\documentclass[a4paper,10pt]{article}
+
+% ---------- ATS FRIENDLY FONT ----------
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% ---------- PACKAGES ----------
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+
+% ---------- PAGE SETUP ----------
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.65in}
+\addtolength{\textheight}{1.3in}
+
+\setlength{\tabcolsep}{0pt}
+\setlength{\parindent}{0pt}
+\raggedright
+\pagenumbering{gobble}
+
+% ---------- SECTION STYLE ----------
+\titleformat{\section}
+{\large\bfseries}
+{}
+{0em}
+{}
+[\titlerule]
+
+\titlespacing{\section}{0pt}{8pt}{5pt}
+
+% ---------- CUSTOM COMMANDS ----------
+\newcommand{\resumeItem}[1]{\item \small{#1}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}
+  \vspace{-4pt}
+}
+
+\newcommand{\resumeProject}[4]{
+  \vspace{4pt}
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & {\small #2 \quad | \quad \href{#3}{View} \quad | \quad \href{#4}{GitHub}} \\
+  \end{tabular*}
+  \vspace{-6pt}
+}
+
+\newcommand{\resumeListStart}{
+  \begin{itemize}[leftmargin=0.18in, label=\textbullet, itemsep=2pt, topsep=2pt]
+}
+
+\newcommand{\resumeListEnd}{\end{itemize}}
+
+% ---------- DOCUMENT ----------
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    {\Large \textbf{Aditya Bapusaheb Chaudhari}} \\[-1pt]
+   {\normalsize \textbf{Software Developer | Java Full Stack Developer | MERN Stack Developer}} \\[3pt]
+
+    Pune, India \quad | \quad +91 7709648063 \quad | \quad
+    \href{mailto:aditya.chaudhari.dev@gmail.com}{aditya.chaudhari.dev@gmail.com} \\[2pt]
+
+    \href{https://www.linkedin.com/in/aditya-chaudhari0301/}{LinkedIn} \quad | \quad
+    \href{https://github.com/chaudhari-aditya03}{GitHub} \quad | \quad
+    \href{https://adityaportfolio-taupe.vercel.app/}{Portfolio} \quad | \quad
+    \href{https://leetcode.com/u/chaudhari_aditya_03/}{LeetCode}
+\end{center}
+
+% ---------- PROFESSIONAL SUMMARY ----------
+\section{Professional Summary}
+\resumeListStart
+\resumeItem{Software Developer with strong foundations in \textbf{Java, Object-Oriented Programming, Data Structures, Algorithms, DBMS, and Software Engineering}.}
+\resumeItem{Hands-on experience building full-stack applications using \textbf{Java, Spring Boot, React.js, Node.js, MySQL, and MongoDB}.}
+\resumeItem{Skilled in REST API development, authentication and authorization, database design, debugging, and problem solving.}
+\resumeItem{Experienced in both \textbf{Java Full Stack} and \textbf{MERN Stack} development with a focus on scalable and maintainable software solutions.}
+\resumeListEnd
+
+% ---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+
+\resumeListStart
+
+\resumeItem{\textbf{Programming Languages:} Java, JavaScript (ES6+), SQL}
+
+\resumeItem{\textbf{Core Java:} Object-Oriented Programming (OOP), Exception Handling, Collections Framework, Multithreading, JDBC, File Handling, Java 8 (Lambda Expressions, Stream API)}
+
+\resumeItem{\textbf{Java Technologies:} Spring Boot, Spring MVC, Hibernate ORM, JPA, Servlets, JSP, RESTful APIs, MVC Architecture}
+
+\resumeItem{\textbf{MERN Stack:} MongoDB, Express.js, React.js, Node.js}
+
+\resumeItem{\textbf{Frontend Development:} HTML5, CSS3, JavaScript, React.js, Redux Toolkit, Bootstrap, Tailwind CSS, Responsive Web Design}
+
+\resumeItem{\textbf{Databases:} MySQL, MongoDB, MongoDB Atlas, Database Design, Query Optimization}
+
+\resumeItem{\textbf{Security:} JWT Authentication, Role-Based Access Control (RBAC), Authentication, Authorization}
+
+\resumeItem{\textbf{Deployment & Cloud:} Vercel, Render, Railway, MongoDB Atlas, GoDaddy Hosting, Custom Domain Configuration, Production Deployment, Environment Variables Management}
+
+\resumeItem{\textbf{Developer Tools:} Git, GitHub, Maven, Postman, Eclipse IDE, VS Code}
+
+\resumeItem{\textbf{Computer Science Fundamentals:} Data Structures & Algorithms, DBMS, Operating Systems, Computer Networks, Software Engineering, API Design, System Design Basics}
+
+\resumeListEnd
+
+
+% ---------- EDUCATION ----------
+\section{Education}
+\resumeSubheading
+{B.Sc. Computer Science}
+{2022 -- 2025}
+{S.M.B.S. Thorat College, Savitribai Phule Pune University}
+{CGPA: 9.48 / 10}
+
+\resumeListStart
+  \resumeItem{Ranked \textbf{1st among 120+ students} for three consecutive academic years.}
+\resumeItem{Relevant Coursework: Data Structures \& Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, Software Engineering, Web Technologies}
+\resumeListEnd
+
+% ---------- PROJECTS ----------
+\section{Projects}
+
+\resumeProject
+{Maison Luxora -- Luxury Jewellery E-Commerce Platform }
+{React, Spring Boot, MySQL, JWT}
+{https://jewelryeshop.vercel.app/}
+{https://github.com/chaudhari-aditya03/luxury-jewelry-ecommerce}
+
+\resumeListStart
+
+\resumeItem{Developed a full-stack luxury jewellery e-commerce platform with product catalog, search, filtering, wishlist, cart, secure checkout, order tracking, and review management.}
+
+\resumeItem{Built scalable backend services using \textbf{Spring Boot, Spring Security, Hibernate/JPA, and RESTful APIs} with \textbf{JWT}-based authentication and \textbf{role-based access control} (RBAC).}
+
+\resumeItem{Integrated \textbf{Google OAuth2 login, email verification, password recovery, Razorpay payment gateway, and Cloudinary} for secure authentication, payment processing, and media management.}
+
+\resumeItem{Designed and optimized \textbf{MySQL database schemas} for users, products, categories, orders, payments, coupons, inventory, and analytics modules.}
+
+\resumeItem{Developed an \textbf{admin dashboard} supporting product, order, coupon, user, and inventory management with business analytics and reporting features.}
+
+\resumeItem{Deployed the application using \textbf{Vercel, Render, Railway/Cloud Services, and custom domain configuration}, enabling a production-ready cloud-hosted environment.}
+
+\resumeListEnd
+
+
+\resumeProject
+{MediPulse -- Real-Time Emergency Response Platform}
+{MERN, Socket.io, JWT, MongoDB}
+{https://medipulse-client.vercel.app/}
+{https://github.com/chaudhari-aditya03/MEDIPULSE}
+
+\resumeListStart
+  \resumeItem{Developed a real-time emergency response platform for ambulance booking, live tracking, hospital coordination, and emergency request management.}
+  \resumeItem{Built role-based dashboards for Admin, Hospital, Doctor, Ambulance Driver, and User modules.}
+  \resumeItem{Implemented secure authentication and authorization using \textbf{JWT and RBAC}.}
+  \resumeItem{Integrated \textbf{Socket.io} for real-time ambulance location tracking and emergency notifications.}
+  \resumeItem{Designed REST APIs for user management, hospital management, ambulance allocation, and emergency tracking.}
+  \resumeItem{Optimized MongoDB queries using indexing, improving database response time by \textbf{25\%}.}
+\resumeListEnd
+
+
+
+% ---------- ACHIEVEMENTS ----------
+\section{Achievements}
+\resumeListStart
+  \resumeItem{Won \textbf{1st Prize} in a technical event among \textbf{70+ participants}.}
+  \resumeItem{Mentored \textbf{100+ students} in Java, Web Development, and project-based learning.}
+  \resumeItem{Solved \textbf{150+ Data Structures and Algorithms problems} on LeetCode.}
+  \resumeItem{Consistently ranked among the top academic performers during undergraduate studies.}
+\resumeListEnd
+
+\section{Certifications}
+
+\resumeListStart
+
+\resumeItem{\textbf{Full Stack Java Development} -- The Kiran Academy \hfill
+\href{https://drive.google.com/file/d/1882LhZOXhZp8QZoA8ESmiZQ7UPU5X7QK/view?usp=sharing}{\textbf{View Certificate}}}
+
+\resumeItem{\textbf{Advanced Certification Programme in Full Stack Development} -- UpGrad \hfill
+\href{https://drive.google.com/file/d/1gpo6BZkQVPmRovn6bcuFr6GmkTr7zX7o/view?usp=sharing}{\textbf{View Certificate}}}
+
+\resumeListEnd
+
+
+\end{document}
