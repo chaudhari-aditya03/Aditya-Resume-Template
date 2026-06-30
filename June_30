@@ -1,0 +1,212 @@
+\documentclass[a4paper,10.9pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{amssymb}
+
+\definecolor{navyblue}{HTML}{1B365D}
+\definecolor{accentgold}{HTML}{005A9C}
+\definecolor{mutedgray}{HTML}{505A64}
+
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.85in}
+\addtolength{\textheight}{1.9in}
+
+\setlength{\tabcolsep}{0pt}
+\setlength{\parindent}{0pt}
+\raggedright
+\pagenumbering{gobble}
+
+\titleformat{\section}
+  {\color{navyblue}\normalsize\bfseries\scshape}
+  {}
+  {0em}
+  {}
+  [\color{navyblue}\titlerule]
+
+\titlespacing{\section}{0pt}{5pt}{3pt}
+
+\newcommand{\resumeItem}[1]{\item\footnotesize{#1}}
+
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{1pt}
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\color{navyblue}#1} & \small\textcolor{mutedgray}{#2} \\
+    \textit{\small\textcolor{accentgold}{#3}} & \textit{\small\textcolor{mutedgray}{#4}} \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProject}[5]{%
+  \vspace{2pt}
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\color{navyblue}#1} \textcolor{mutedgray}{\small\textendash\ #2} &
+    \small\href{#4}{\textcolor{navyblue}{\underline{Live}}}\ \textcolor{mutedgray}{|}\ \href{#5}{\textcolor{navyblue}{\underline{GitHub}}} \\
+  \end{tabular*}
+  {\small\textcolor{mutedgray}{\textit{#3}}}
+  \vspace{-4pt}
+}
+
+\newcommand{\resumeListStart}{%
+  \begin{itemize}[leftmargin=0.17in, label={\color{accentgold}\scriptsize$\blacktriangleright$}, itemsep=1.5pt, topsep=2pt, parsep=0pt]%
+}
+\newcommand{\resumeListEnd}{\end{itemize}}
+
+% ============================================================
+\begin{document}
+% ============================================================
+
+% HEADER
+\vspace{1pt}
+\begin{center}
+  {\LARGE\bfseries\color{navyblue} Aditya Bapusaheb Chaudhari}\\[2pt]
+  {\small\color{accentgold}\textsc{Software Engineering Intern \quad|\quad Java Full Stack Developer \quad|\quad MERN Stack Developer}}\\[4pt]
+  {\small
+    \textcolor{mutedgray}{Pune, Maharashtra, India}
+    \quad\textcolor{mutedgray}{|}\quad
+    \textcolor{mutedgray}{+91 77096 48063}
+    \quad\textcolor{mutedgray}{|}\quad
+    \href{mailto:aditya.chaudhari.dev@gmail.com}{\textcolor{navyblue}{aditya.chaudhari.dev@gmail.com}}
+  }\\[2pt]
+  {\small
+    \href{https://www.linkedin.com/in/aditya-chaudhari0301/}{\textcolor{navyblue}{\underline{linkedin.com/in/aditya-chaudhari0301}}}
+    \quad\textcolor{mutedgray}{|}\quad
+    \href{https://github.com/chaudhari-aditya03}{\textcolor{navyblue}{\underline{github.com/chaudhari-aditya03}}}
+    \quad\textcolor{mutedgray}{|}\quad
+    \href{https://adityaportfolio-taupe.vercel.app/}{\textcolor{navyblue}{\underline{Portfolio}}}
+    \quad\textcolor{mutedgray}{|}\quad
+    \href{https://leetcode.com/u/chaudhari_aditya_03/}{\textcolor{navyblue}{\underline{LeetCode}}}
+  }
+\end{center}
+
+\vspace{-15pt}
+\noindent\textcolor{navyblue}{\rule{\textwidth}{1.5pt}}
+\vspace{-15pt}
+
+% ============================================================
+% 1. SUMMARY
+% ============================================================
+\section{Summary}
+\vspace{2pt}{\parbox{\dimexpr\textwidth-2\fboxsep}{%
+  \vspace{1pt}\footnotesize\textcolor{black}{%
+    Software engineering intern and full-stack developer with strong \textbf{object-oriented programming} skills in Java and JavaScript. Experienced in building production-grade applications using the \textbf{MERN stack} and \textbf{Spring Boot}, with a solid foundation in \textbf{data structures, algorithms}, and core CS fundamentals. Regularly pairs with founders and senior engineers on architecture decisions, incorporates code review feedback to sharpen solution quality, and quickly adopts new tools and engineering methods to meet project requirements on schedule.
+  }\vspace{1pt}
+}}
+
+% ============================================================
+% 2. EXPERIENCE
+% ============================================================
+\section{Experience}
+
+\resumeSubheading
+  {Akarvi Labs Private Limited}{Jun 2026 -- Present}
+  {Software Engineering Intern}{Hinjawadi, Pune, Maharashtra}
+
+\resumeListStart
+  \resumeItem{Building production features across the \textbf{MERN stack} (MongoDB, Express, React, Node.js) and \textbf{Next.js}, shipping clean, maintainable code and collaborating daily with the founding team through code reviews and design discussions.}
+  \resumeItem{Improved team delivery efficiency by participating in requirement gathering, scoping tasks, and translating client needs into actionable engineering plans, reducing ambiguity across \textbf{3+ active features}.}
+  \resumeItem{Accelerated development velocity using AI-assisted tools (Claude Code, Cursor, Copilot) alongside Git and GitHub, enabling faster iteration cycles and higher code quality.}
+  \resumeItem{Managed end-to-end responsibility for assigned features, from scoping and development to testing and deployment, providing daily status updates and delivering all milestones on schedule with zero missed deadlines.}
+\resumeListEnd
+
+% ============================================================
+% 3. TECHNICAL SKILLS
+% ============================================================
+\section{Technical Skills}
+
+\resumeListStart
+
+\resumeItem{\textbf{Languages:} Java, JavaScript (ES6+), SQL, HTML5, CSS3}
+
+\resumeItem{\textbf{OOP \& Core Java:} Object-Oriented Programming, Collections Framework, Multithreading, Exception Handling, JDBC, Java 8 (Streams, Lambda Expressions)}
+
+\resumeItem{\textbf{Frameworks:} Spring Boot, Spring MVC, Spring Security, Hibernate ORM, JPA, React.js, Node.js, Express.js, Next.js, Socket.io}
+
+\resumeItem{\textbf{Databases:} MySQL, MongoDB, MongoDB Atlas, Query Optimization, Indexing}
+
+\resumeItem{\textbf{Security:} JWT Authentication, Role-Based Access Control (RBAC), Google OAuth2, Email Verification, BCrypt Password Encryption}
+
+\resumeItem{\textbf{Tools:} Git, GitHub, Maven, Postman, IntelliJ IDEA, VS Code}
+
+\resumeItem{\textbf{CS Fundamentals:} Data Structures \& Algorithms (150+ LeetCode), DBMS, Operating Systems, Computer Networks, Software Engineering}
+
+\resumeItem{\textbf{Soft Skills:} Team Collaboration, Clear Communication, Time Management, Problem Solving, Learning Agility, Feedback Acceptance}
+
+\resumeListEnd
+
+% ============================================================
+% 4. EDUCATION
+% ============================================================
+\section{Education}
+\resumeSubheading
+  {B.Sc. Computer Science}{Jun 2022 -- May 2025}
+  {S.M.B.S. Thorat College, Savitribai Phule Pune University}{CGPA: 9.48 / 10}
+
+\resumeListStart
+  \resumeItem{Ranked \textbf{1st among 120+ students} for three consecutive academic years.}
+  \resumeItem{Relevant coursework: Data Structures \& Algorithms, Object-Oriented Programming, DBMS, Operating Systems, Computer Networks, Software Engineering, Web Technologies.}
+\resumeListEnd
+
+% ============================================================
+% 5. PROJECTS
+% ============================================================
+\section{Projects}
+
+% --- Project 1: Maison Luxora ---
+\resumeProject{Maison Luxora}{Luxury Jewellery E-Commerce Platform}{React.js $\cdot$ Spring Boot $\cdot$ Spring Security $\cdot$ Spring Data JPA $\cdot$ Hibernate $\cdot$ MySQL $\cdot$ JWT $\cdot$ Razorpay $\cdot$ Cloudinary}{https://jewelryeshop.vercel.app/}{https://github.com/chaudhari-aditya03/luxury-jewelry-ecommerce}
+
+\resumeListStart
+\resumeItem{Architected a full-stack e-commerce solution supporting \textbf{20+ customer and administrative workflows}, including catalog browsing, cart operations, order processing, reviews, and inventory control.}
+\resumeItem{Developed and documented \textbf{30+ RESTful APIs} using Spring Boot, Spring Security, Hibernate/JPA, and MySQL; secured endpoints with JWT, RBAC, OAuth2, email verification, and account recovery.}
+\resumeItem{Integrated Razorpay and Cloudinary to support secure payment processing and optimized media delivery, and deployed the platform on cloud infrastructure with HTTPS and a custom domain.}
+\resumeListEnd
+
+% --- Project 2: MediPulse ---
+\resumeProject{MediPulse}{Real-Time Emergency Response Platform}{MongoDB $\cdot$ Express.js $\cdot$ React.js $\cdot$ Node.js $\cdot$ Socket.io $\cdot$ JWT}{https://medipulse-client.vercel.app/}{https://github.com/chaudhari-aditya03/MEDIPULSE}
+
+\resumeListStart
+\resumeItem{Built a healthcare coordination platform connecting patients, hospitals, doctors, ambulance drivers, and administrators across \textbf{5 user roles} through a centralized emergency network.}
+\resumeItem{Leveraged Socket.io to deliver live ambulance tracking and event-driven notifications with low-latency, real-time communication.}
+\resumeItem{Implemented \textbf{25+ REST APIs} for emergency requests, hospital operations, and ambulance allocation with JWT-based access control; improved database performance by \textbf{25\%} through MongoDB indexing and query optimization.}
+\resumeListEnd
+
+% --- Project 3: ProFarm ---
+\resumeProject{ProFarm}{Agricultural Business Website, Live Client Project}{HTML5 $\cdot$ CSS3 $\cdot$ JavaScript $\cdot$ Tailwind CSS $\cdot$ Vercel}{https://www.pro-farm.in/}{https://github.com/chaudhari-aditya03/profarm-website}
+
+\resumeListStart
+\resumeItem{Built a responsive, mobile-first business website for a real agricultural client, integrating WhatsApp and email workflows that simplified customer inquiries and supported lead generation.}
+\resumeItem{Configured domain management, DNS records, and SSL/HTTPS independently to ensure secure, reliable accessibility across desktop, tablet, and mobile devices.}
+\resumeListEnd
+
+% ============================================================
+% 6. ACHIEVEMENTS
+% ============================================================
+\section{Achievements}
+\resumeListStart
+  \resumeItem{Delivered \textbf{3 production-grade applications} (2 full-stack, 1 client project) with live custom domains, cloud infrastructure, and real users; won \textbf{1st Prize} in a technical event among 70+ participants.}
+  \resumeItem{Mentored \textbf{100+ students} in Java, object-oriented programming, and web development as a peer educator; solved \textbf{150+ Data Structures \& Algorithms problems} on LeetCode.}
+\resumeListEnd
+
+% ============================================================
+% 7. CERTIFICATIONS
+% ============================================================
+\section{Certifications}
+\resumeListStart
+  \resumeItem{%
+    \textbf{Full Stack Java Development}, The Kiran Academy \hfill
+    \href{https://drive.google.com/file/d/1882LhZOXhZp8QZoA8ESmiZQ7UPU5X7QK/view}{\textcolor{navyblue}{\small\underline{View Certificate}}}%
+  }
+  \resumeItem{%
+    \textbf{Advanced Certification Programme in Full Stack Development}, UpGrad \hfill
+    \href{https://drive.google.com/file/d/1gpo6BZkQVPmRovn6bcuFr6GmkTr7zX7o/view}{\textcolor{navyblue}{\small\underline{View Certificate}}}%
+  }
+\resumeListEnd
+
+\end{document}
